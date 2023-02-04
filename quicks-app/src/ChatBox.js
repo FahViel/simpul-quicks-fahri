@@ -1,18 +1,21 @@
 import React from "react";
-import '.././App.css'
+import { Box, FormControl, Input } from "@chakra-ui/react";
 
 
-function Test() {
+
+function ChatBox() {
     return ( 
         <div>
-            <div className="test">
-                <h1>Hello World</h1>
-            </div>
+            <Box bg='white' color='white' w='300px' h='300px' display='flex' mt={-370} >
+                <FormControl>
+                    <Input placeholder='Search'/>
+                </FormControl>
+            </Box>
         </div>
     )
 }
 
-export default Test;
+export default ChatBox;
 
 
 

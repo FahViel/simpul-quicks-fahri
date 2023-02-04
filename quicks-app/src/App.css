@@ -1,4 +1,33 @@
-.App {
-  text-align: center;
-}
+/* App.js */
+    /* Button Logo */
+        .button-logo {
+            margin-left: 92%;
+            margin-top: 40%;
+        }
 
+        .image-logo {
+            display: flex;
+            object-fit: cover;
+            width: 60px;
+            height: 60px;
+        }
+
+        .image-logo:hover {
+            filter:opacity(80%);
+        }
+    /* Button Logo End */
+
+    /* Button Task */
+        .image-button-task {
+            width: 50px;
+            height: 50px;
+        }
+    /* Button Task End */
+
+    /* Button Chat */
+        .image-button-inbox {
+            width: 50px;
+            height: 50px;
+        }
+    /* Button Chat End */
+/*  App.js End */
