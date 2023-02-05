@@ -1,21 +1,24 @@
-import React from "react";
-import { Box, FormControl, Input } from "@chakra-ui/react";
-
-
+import React from 'react'
+import { Box, FormControl, Input, InputGroup, InputRightElement, SimpleGrid } from '@chakra-ui/react'
+import { SearchIcon } from '@chakra-ui/icons'
+import { Loading } from './components/Chat Box/Loading'
 
 function ChatBox() {
-    return ( 
-        <div>
-            <Box bg='white' color='white' w='300px' h='300px' display='flex' mt={-370} >
-                <FormControl>
-                    <Input placeholder='Search'/>
-                </FormControl>
-            </Box>
-        </div>
-    )
+  return (
+    <>
+      <SimpleGrid position="fixed" bottom={100} right={0} p={4} mr={1}>
+        <Box bg="white" color="white" w="700px" h="700px" borderRadius="base" p={4}>
+          <FormControl>
+            <InputGroup>
+              <InputRightElement borderColor="black" children={<SearchIcon />} color="gray" />
+              <Input placeholder="Search" type="text" color="GrayText" borderColor="#828282" variant="outline" />
+            </InputGroup>
+          </FormControl>
+          <Loading />
+        </Box>
+      </SimpleGrid>
+    </>
+  )
 }
 
-export default ChatBox;
-
-
-
+export default ChatBox
